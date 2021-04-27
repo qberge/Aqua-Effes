@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("../partials/header-gites.ejs") %>
+    <style>
+      .brandon {
+        font-family: "BrandonGrotW01-Light", sans-serif;
+      }
+      .didoteText {
+        font-family: "DidoteTextW01-Italic";
+      }
+      .title-home {
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        font-size: 40px;
+      }
+      .sub-title-home {
+        font-size: 20px;
+      }
+      .sub-title-home:before,
+      .sub-title-home:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 1rem;
+        height: 1px;
+        background: #000;
+      }
+      .sub-title-home:before {
+        margin-right: 0.3rem;
+      }
+      .sub-title-home:after {
+        margin-left: 0.3rem;
+      }
+      body,
+      html {
+        height: 100%;
+      }
+
+      .parallax {
+        /* The image used */
+        background-image: url("images/img_parallax.jpg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container-parallax {
+        height: 600px;
+        font-size: 36px;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include ("../partials/nav-gites.ejs") %>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="parallax">
+            <div class="row">
+              <div class="col-12 bg-light text-center pt-5 pb-3">
+                <h1 class="title-home brandon">ERIC & MURIEL</h1>
+                <h2 class="sub-title-home didoteText">Gites de France</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-parallax bg-light">
+            <div class="row">
+              <div class="col-12 bg-light text-center pt-5 pb-3">
+                <h1 class="title brandon">Nos Gites</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="parallax"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

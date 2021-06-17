@@ -81,24 +81,49 @@
       .avis:hover {
         text-decoration: underline;
       }
+      .logo-gite-fr {
+        position: absolute;
+        width: 130px;
+        top: 1%;
+        left: 0;
+      }
+      .checked {
+        color: orange;
+        border: 1px solid orange;
+      }
+      .unchecked {
+        color: white;
+        border: 1px solid orange;
+      }
     </style>
   </head>
   <body>
-    <%- include ("../partials/nav-gites.ejs") %>
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
           <div class="parallax">
-            <div class="row">
+            <div class="row mt-4">
               <div class="col-12 bg-light text-center pt-5 pb-3">
                 <h1 class="title-home brandon">ERIC & MURIEL</h1>
                 <h2 class="sub-title-home didoteText">Gites de France</h2>
+                <h5 class="didoteText">
+                  Nos Activités Piscine
+                  <a
+                    href="swimming"
+                    style="color: #328885 text-decoration: underline"
+                    >cliquer ici</a
+                  >
+                </h5>
               </div>
+              <img
+                src="./images/gites-de-france.png"
+                class="rounded mx-auto d-block logo-gite-fr pt-5"
+              />
             </div>
           </div>
 
           <div class="container-parallax bg-light">
-            <div class="container">
+            <div class="container-fluid">
               <section id="offers" class="pt-2 mt-3 pb-3">
                 <div class="row">
                   <div class="col-12 bg-light text-center pt-5 pb-3">
@@ -109,7 +134,7 @@
                 <!-- Grid row -->
                 <div class="row justify-content-center">
                   <!-- Grid column -->
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-3">
                     <!--Card-->
                     <div class="card card-personal mb-4">
                       <!--Card image-->
@@ -119,58 +144,87 @@
                           src="images/gites1.jpg"
                           alt="Card image cap"
                         />
-                        <a href="#!">
-                          <div
-                            class="mask rgba-white-slight waves-effect waves-light"
-                          ></div>
-                        </a>
                       </div>
                       <!--Card image-->
-
                       <!--Card content-->
                       <div class="card-body">
                         <!--Title-->
-                        <a>
-                          <h5 class="font-weight-bold text-uppercase">
-                            <strong>Aqua Gite n°1</strong>
-                          </h5>
-                        </a>
-                        <a>
-                          <span class="badge badge-info py-2 px-2">$ 250</span>
-                        </a>
+                        <div class="row">
+                          <div class="col-lg-4 col-md-6">
+                            <h5>Les Effes 1</h5>
+                          </div>
+                        </div>
 
                         <!--Text-->
-                        <p class="grey-text mt-2">
+                        <p class="grey-text mt-0">
                           Gîte à Varennes-sur-fouzon - 36210
                           <!--Grid row-->
                         </p>
                         <div class="row">
                           <!--Grid column-->
-                          <div class="col-lg-4 col-md-12 text-center">
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
                             <p class="dark-grey-text">
                               <i
                                 class="fas fa-hotel dark-grey-text"
                                 aria-hidden="true"
                               ></i>
-                              3 beds
+                              3 Chambres
                             </p>
                           </div>
                           <!--Grid column-->
 
                           <!--Grid column-->
-                          <div class="col-lg-4 col-md-12 text-center">
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
                             <p class="dark-grey-text">
                               <i
-                                class="fas fa-utensils dark-grey-text"
+                                class="fas fa-bed dark-grey-text"
                                 aria-hidden="true"
                               ></i>
-                              Launches
+                              4 Lits
                             </p>
                           </div>
                           <!--Grid column-->
 
                           <!--Grid column-->
-                          <div class="col-lg-4 col-md-12 text-center">
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
+                            <p class="dark-grey-text">
+                              <i
+                                class="fas fa-user-friends"
+                                aria-hidden="true"
+                              ></i>
+                              6 personnes
+                            </p>
+                          </div>
+                          <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                        <!--Grid row-->
+                        <div class="row">
+                          <!--Grid column-->
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
+                            <p class="dark-grey-text">
+                              <i
+                                class="fas fa-expand-alt"
+                                aria-hidden="true"
+                              ></i>
+                              120 m²
+                            </p>
+                          </div>
+                          <!--Grid column-->
+
+                          <!--Grid column-->
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
+                            <p class="dark-grey-text">
+                              <i
+                                class="fas fa-paw dark-grey-text"
+                                aria-hidden="true"
+                              ></i>
+                              Autorisés
+                            </p>
+                          </div>
+                          <!--Grid column-->
+                          <!--Grid column-->
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
                             <p class="dark-grey-text">
                               <i
                                 class="fas fa-wifi dark-grey-text"
@@ -182,54 +236,55 @@
                           <!--Grid column-->
                         </div>
                         <!--Grid row-->
-                        <!--Grid row-->
-                      </p>
-                      <div class="row">
-                        <!--Grid column-->
-                        <div class="col-lg-4 col-md-12 text-center">
-                          <p class="dark-grey-text">
-                            <i
-                              class="fas fa-hotel dark-grey-text"
-                              aria-hidden="true"
-                            ></i>
-                            3 beds
-                          </p>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 col-xs-12">
+                            <span class="text-muted" style="font-size: 0.8rem"
+                              >À partir de</span
+                            >
+                            <h3 class="text-success">
+                              64.29€<span
+                                class="text-muted"
+                                style="font-size: 0.8rem; padding-left: 5px"
+                                >par nuit</span
+                              >
+                            </h3>
+                          </div>
+                          <div
+                            class="
+                              col-lg-6 col-md-6 col-xs-12
+                              align-self-center
+                            "
+                            style="text-align: right"
+                          >
+                            <div>
+                              <span class="text-muted" style="font-size: 0.8rem"
+                                >7 avis</span
+                              >
+                            </div>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+                          </div>
                         </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-lg-4 col-md-12 text-center">
-                          <p class="dark-grey-text">
-                            <i
-                              class="fas fa-utensils dark-grey-text"
-                              aria-hidden="true"
-                            ></i>
-                            Launches
-                          </p>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-lg-4 col-md-12 text-center">
-                          <p class="dark-grey-text">
-                            <i
-                              class="fas fa-wifi dark-grey-text"
-                              aria-hidden="true"
-                            ></i>
-                            Wi-Fi
-                          </p>
-                        </div>
-                        <!--Grid column-->
-                      </div>
-                      <!--Grid row-->
-                        <p></p>
                         <hr />
                         <!--Grid column-->
                         <div class="col-12 text-center">
                           <button
-                            class="btn btn-info btn-sm font-weight-bold btn-rounded waves-effect waves-light"
+                            class="
+                              btn btn-success btn-sm
+                              font-weight-bold
+                              btn-rounded
+                              waves-effect waves-light
+                            "
                           >
-                            <strong>Book a room</strong>
+                            <a
+                              class="btn text-light"
+                              target="_blank"
+                              href="https://www.gites-de-france-indre.com/fr/location/locations-gites-varennes-sur-fouzon-les-effes-h36g004185"
+                              >En savoir plus..</a
+                            >
                           </button>
                         </div>
                         <!--Grid column-->
@@ -240,72 +295,96 @@
                   </div>
                   <!-- Grid column -->
                   <!-- Grid column -->
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-3">
                     <!--Card-->
                     <div class="card card-personal mb-4">
                       <!--Card image-->
-
                       <div class="view overlay">
                         <img
                           class="card-img-top"
                           src="images/gites2.jpg"
                           alt="Card image cap"
                         />
-                        <a href="#!">
-                          <div
-                            class="mask rgba-white-slight waves-effect waves-light"
-                          ></div>
-                        </a>
                       </div>
                       <!--Card image-->
-
                       <!--Card content-->
                       <div class="card-body">
                         <!--Title-->
-                        <a>
-                          <h5 class="font-weight-bold text-uppercase">
-                            <strong>
-                              <div class="row justify-content-start"></div>
-                              Aqua Gite n°2</strong
-                            >
-                          </h5>
-                        </a>
-                        <a>
-                          <span class="badge badge-info py-2 px-2">$150</span>
-                        </a>
+                        <div class="row">
+                          <div class="col-lg-4 col-md-6">
+                            <h5>Les Effes 2</h5>
+                          </div>
+                        </div>
 
                         <!--Text-->
-                        <p class="grey-text mt-2">
+                        <p class="grey-text mt-0">
                           Gîte à Varennes-sur-fouzon - 36210
                           <!--Grid row-->
                         </p>
                         <div class="row">
                           <!--Grid column-->
-                          <div class="col-lg-4 col-md-12 text-center">
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
                             <p class="dark-grey-text">
                               <i
                                 class="fas fa-hotel dark-grey-text"
                                 aria-hidden="true"
                               ></i>
-                              1 bed
+                              2 Chambres
                             </p>
                           </div>
                           <!--Grid column-->
 
                           <!--Grid column-->
-                          <div class="col-lg-4 col-md-12 text-center">
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
                             <p class="dark-grey-text">
                               <i
-                                class="fas fa-utensils dark-grey-text"
+                                class="fas fa-bed dark-grey-text"
                                 aria-hidden="true"
                               ></i>
-                              Launches
+                              3 Lits
+                            </p>
+                          </div>
+                          <!--Grid column-->
+                          <!--Grid column-->
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
+                            <p class="dark-grey-text">
+                              <i
+                                class="fas fa-user-friends"
+                                aria-hidden="true"
+                              ></i>
+                              4 personnes
+                            </p>
+                          </div>
+                          <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                        <!--Grid row-->
+                        <div class="row">
+                          <!--Grid column-->
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
+                            <p class="dark-grey-text">
+                              <i
+                                class="fas fa-expand-alt"
+                                aria-hidden="true"
+                              ></i>
+                              70 m²
                             </p>
                           </div>
                           <!--Grid column-->
 
                           <!--Grid column-->
-                          <div class="col-lg-4 col-md-12 text-center">
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
+                            <p class="dark-grey-text">
+                              <i
+                                class="fas fa-paw dark-grey-text"
+                                aria-hidden="true"
+                              ></i>
+                              Autorisés
+                            </p>
+                          </div>
+                          <!--Grid column-->
+                          <!--Grid column-->
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
                             <p class="dark-grey-text">
                               <i
                                 class="fas fa-wifi dark-grey-text"
@@ -318,32 +397,154 @@
                         </div>
                         <!--Grid row-->
                         <div class="row">
+                          <div class="col-lg-6 col-md-6 col-xs-12">
+                            <span class="text-muted" style="font-size: 0.8rem"
+                              >À partir de</span
+                            >
+                            <h3 class="text-success">
+                              51.43€<span
+                                class="text-muted"
+                                style="font-size: 0.8rem; padding-left: 5px"
+                                >par nuit</span
+                              >
+                            </h3>
+                          </div>
+                          <div
+                            class="
+                              col-lg-6 col-md-6 col-xs-12
+                              align-self-center
+                            "
+                            style="text-align: right"
+                          >
+                            <div>
+                              <span class="text-muted" style="font-size: 0.8rem"
+                                >10 avis</span
+                              >
+                            </div>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+                          </div>
+                        </div>
+                        <hr />
+                        <!--Grid column-->
+                        <div class="col-12 text-center">
+                          <button
+                            class="
+                              btn btn-success btn-sm
+                              font-weight-bold
+                              btn-rounded
+                              waves-effect waves-light
+                            "
+                          >
+                            <a
+                              class="btn text-light"
+                              target="_blank"
+                              href="https://www.gites-de-france-indre.com/fr/location/locations-gites-varennes-sur-fouzon-les-effes-h36g004186"
+                              >En savoir plus..</a
+                            >
+                          </button>
+                        </div>
+                        <!--Grid column-->
+                      </div>
+                      <!--Card content-->
+                    </div>
+                    <!--Card-->
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-6 col-lg-3">
+                    <!--Card-->
+                    <div class="card card-personal mb-4">
+                      <!--Card image-->
+                      <div class="view overlay">
+                        <img
+                          class="card-img-top"
+                          src="images/gites2.jpg"
+                          alt="Card image cap"
+                        />
+                      </div>
+                      <!--Card image-->
+                      <!--Card content-->
+                      <div class="card-body">
+                        <!--Title-->
+                        <div class="row">
+                          <div class="col-lg-4 col-md-6">
+                            <h5>Les Effes 3</h5>
+                          </div>
+                        </div>
+
+                        <!--Text-->
+                        <p class="grey-text mt-0">
+                          Gîte à Varennes-sur-fouzon - 36210
+                          <!--Grid row-->
+                        </p>
+                        <div class="row">
                           <!--Grid column-->
-                          <div class="col-lg-4 col-md-12 text-center">
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
                             <p class="dark-grey-text">
                               <i
                                 class="fas fa-hotel dark-grey-text"
                                 aria-hidden="true"
                               ></i>
-                              1 bed
+                              2 Chambres
                             </p>
                           </div>
                           <!--Grid column-->
 
                           <!--Grid column-->
-                          <div class="col-lg-4 col-md-12 text-center">
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
                             <p class="dark-grey-text">
                               <i
-                                class="fas fa-utensils dark-grey-text"
+                                class="fas fa-bed dark-grey-text"
                                 aria-hidden="true"
                               ></i>
-                              Launches
+                              3 Lits
+                            </p>
+                          </div>
+                          <!--Grid column-->
+                          <!--Grid column-->
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
+                            <p class="dark-grey-text">
+                              <i
+                                class="fas fa-user-friends"
+                                aria-hidden="true"
+                              ></i>
+                              4 personnes
+                            </p>
+                          </div>
+                          <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                        <!--Grid row-->
+                        <div class="row">
+                          <!--Grid column-->
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
+                            <p class="dark-grey-text">
+                              <i
+                                class="fas fa-expand-alt"
+                                aria-hidden="true"
+                              ></i>
+                              70 m²
                             </p>
                           </div>
                           <!--Grid column-->
 
                           <!--Grid column-->
-                          <div class="col-lg-4 col-md-12 text-center">
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
+                            <p class="dark-grey-text">
+                              <i
+                                class="fas fa-paw dark-grey-text"
+                                aria-hidden="true"
+                              ></i>
+                              Autorisés
+                            </p>
+                          </div>
+                          <!--Grid column-->
+                          <!--Grid column-->
+                          <div class="col-lg-4 col-md-4 col-xs-12 text-center">
                             <p class="dark-grey-text">
                               <i
                                 class="fas fa-wifi dark-grey-text"
@@ -355,15 +556,55 @@
                           <!--Grid column-->
                         </div>
                         <!--Grid row-->
-                        <p></p>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 col-xs-12">
+                            <span class="text-muted" style="font-size: 0.8rem"
+                              >À partir de</span
+                            >
+                            <h3 class="text-success">
+                              51.43€<span
+                                class="text-muted"
+                                style="font-size: 0.8rem; padding-left: 5px"
+                                >par nuit</span
+                              >
+                            </h3>
+                          </div>
+                          <div
+                            class="
+                              col-lg-6 col-md-6 col-xs-12
+                              align-self-center
+                            "
+                            style="text-align: right"
+                          >
+                            <div>
+                              <span class="text-muted" style="font-size: 0.8rem"
+                                >10 avis</span
+                              >
+                            </div>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+                          </div>
+                        </div>
                         <hr />
-                        <div class="row justify-content-start"></div>
                         <!--Grid column-->
                         <div class="col-12 text-center">
                           <button
-                            class="btn btn-info btn-sm font-weight-bold btn-rounded waves-effect waves-light"
+                            class="
+                              btn btn-success btn-sm
+                              font-weight-bold
+                              btn-rounded
+                              waves-effect waves-light
+                            "
                           >
-                            <strong>Book a room</strong>
+                            <a
+                              class="btn text-light"
+                              target="_blank"
+                              href="https://www.gites-de-france-indre.com/fr/location/locations-gites-varennes-sur-fouzon-les-effes-h36g004186"
+                              >En savoir plus..</a
+                            >
                           </button>
                         </div>
                         <!--Grid column-->

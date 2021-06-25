@@ -3059,21 +3059,21 @@ h5,
 .btn-carte-visite-custom {
   height: 100%;
   width: 20px;
-  background-color: white;
+  background-color: #8de290;
   position: absolute;
   top: 0%;
   right: 0%;
   color: black;
   cursor: pointer;
 }
-.btn-carte-visite-custom {
-  background-color: white;
+.btn-carte-visite-custom:hover {
+  background-color: #64e669;
 }
 
 .carte-visite-title {
   position: absolute;
   text-align: center;
-  bottom: 10%;
+  bottom: 13%;
   left: 12%;
   margin: 0;
 }
@@ -3147,4 +3147,12 @@ h5,
 }
 .swimming-btn-clock:hover {
   text-decoration: underline;
+}
+
+.btn-infos-gites {
+  position: absolute;
+  bottom: 3%;
+  left: 26%;
+  padding: 5px !important;
+  border-radius: 5px;
 }

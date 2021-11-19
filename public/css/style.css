@@ -3156,3 +3156,14 @@ h5,
   padding: 5px !important;
   border-radius: 5px;
 }
+
+.swimming-pool {
+  background-image: url(../images/swimming-pool.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ctn-clock {
+  background-color: white;
+  border-radius: 15px;
+}

@@ -4,7 +4,7 @@
     <%- include ("../partials/header-swimming.ejs") %>
   </head>
   <body id="Home">
-    <div id="mySidebar" class="carte-visite-effes">
+    <div id="mySidebar" class="carte-visite-effes" style="display: none">
       <img
         src="./images/gites-de-france.png"
         class="rounded mx-auto d-block"
@@ -46,7 +46,7 @@
               >
                 <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                   <li>
-                    <a href="#Home"><span>Home</span></a>
+                    <a href="#Home"><span>Accueil</span></a>
                   </li>
                   <li>
                     <a href="#nos-activites"><span>Activités</span></a>
@@ -55,11 +55,11 @@
                     <a href="#About"><span>A propos de Nous</span></a>
                   </li>
                   <li>
-                    <a href="#Clock"><span>Horraires Cours</span></a>
+                    <a href="#Clock"><span>Horaires Cours</span></a>
                   </li>
-                  <li>
-                    <a href="gites"><span>Nos Gites</span></a>
-                  </li>
+                  <!-- <li>
+                    <a href="#"><span>Nos Gites</span></a>
+                  </li> -->
                 </ul>
               </nav>
             </div>
@@ -149,7 +149,7 @@
                 <div class="d-flex quick-info-2">
                   <span class="icon icon-clock-o mr-3"></span>
                   <div class="text">
-                    <strong class="d-block heading">Horraires Cours</strong>
+                    <strong class="d-block heading">Horaires Cours</strong>
                     <a href="#Clock" class="excerpt swimming-btn-clock"
                       >Cliquer ici</a
                     >
@@ -169,7 +169,7 @@
               <p>
                 Toutes nos activités piscine sont effectuées par un Maitre
                 Nageur certifié. <br />Vous pouvez voir la liste de nos
-                services, en ce qui concerne la réservation
+                services, pour la réservation
                 <a
                   href="#Clock"
                   style="color: #328885; text-decoration: underline"
@@ -184,10 +184,13 @@
             <div class="mb-4 mb-lg-0 col-sm-6 col-md-6 col-lg-3">
               <div class="block-service-1-card">
                 <a href="#" class="thumbnail-link d-block mb-4"
-                  ><img src="images/aquabike.jpg" alt="Image" class="img-fluid"
+                  ><img
+                    src="images/cours-natation.jpg"
+                    alt="Image"
+                    class="img-fluid"
                 /></a>
                 <h3 class="block-service-1-heading mb-3">
-                  <a href="#">Scéance d'Aquabike</a>
+                  <a href="#">Cours de natation</a>
                 </h3>
                 <div class="block-service-1-excerpt">
                   <p>
@@ -198,13 +201,44 @@
                 </div>
                 <p>
                   <a
-                    href="#"
+                    href="#Clock"
                     class="
                       d-inline-flex
                       align-items-center
                       block-service-1-more
                     "
-                    ><span class="span-custom">Find out more</span>
+                    ><span class="span-custom">Horaires et Prix</span>
+                    <span
+                      class="icon-keyboard_arrow_right icon span-custom"
+                    ></span
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="mb-4 mb-lg-0 col-sm-6 col-md-6 col-lg-3">
+              <div class="block-service-1-card">
+                <a href="#" class="thumbnail-link d-block mb-4"
+                  ><img src="images/aquagym.jpg" alt="Image" class="img-fluid"
+                /></a>
+                <h3 class="block-service-1-heading mb-3">
+                  <a href="#">Aquagym</a>
+                </h3>
+                <div class="block-service-1-excerpt">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Enim odit molestias inventore, id sed, in harum tenetur
+                    earum.
+                  </p>
+                </div>
+                <p>
+                  <a
+                    href="#Clock"
+                    class="
+                      d-inline-flex
+                      align-items-center
+                      block-service-1-more
+                    "
+                    ><span class="span-custom">Horaires et Prix</span>
                     <span
                       class="icon-keyboard_arrow_right icon span-custom"
                     ></span
@@ -216,12 +250,12 @@
               <div class="block-service-1-card">
                 <a href="#" class="thumbnail-link d-block mb-4"
                   ><img
-                    src="images/cours-natation.jpg"
+                    src="images/perf_natation.jpg"
                     alt="Image"
                     class="img-fluid"
                 /></a>
                 <h3 class="block-service-1-heading mb-3">
-                  <a href="#">Cours de Natation</a>
+                  <a href="#">Perfectionnement Natation</a>
                 </h3>
                 <div class="block-service-1-excerpt">
                   <p>
@@ -232,44 +266,13 @@
                 </div>
                 <p>
                   <a
-                    href="#"
+                    href="#Clock"
                     class="
                       d-inline-flex
                       align-items-center
                       block-service-1-more
                     "
-                    ><span class="span-custom">Find out more</span>
-                    <span
-                      class="icon-keyboard_arrow_right icon span-custom"
-                    ></span
-                  ></a>
-                </p>
-              </div>
-            </div>
-            <div class="mb-4 mb-lg-0 col-sm-6 col-md-6 col-lg-3">
-              <div class="block-service-1-card">
-                <a href="#" class="thumbnail-link d-block mb-4"
-                  ><img src="images/img_2.jpg" alt="Image" class="img-fluid"
-                /></a>
-                <h3 class="block-service-1-heading mb-3">
-                  <a href="#">Massage par notre meilleure masseuse</a>
-                </h3>
-                <div class="block-service-1-excerpt">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Enim odit molestias inventore, id sed, in harum tenetur
-                    earum.
-                  </p>
-                </div>
-                <p>
-                  <a
-                    href="#"
-                    class="
-                      d-inline-flex
-                      align-items-center
-                      block-service-1-more
-                    "
-                    ><span class="span-custom">Find out more</span>
+                    ><span class="span-custom">Horaires et Prix</span>
                     <span
                       class="icon-keyboard_arrow_right icon span-custom"
                     ></span
@@ -281,21 +284,18 @@
         </div>
       </div>
 
-      <div class="site-section" id="Clock">
-        <div class="container">
+      <div class="site-section swimming-pool p-5" id="Clock">
+        <div class="container ctn-clock pb-4">
           <div class="row mb-5">
             <div class="col-md-12 text-center">
-              <h2 class="site-section-heading text-center font-secondary">
-                Horraires Cours
+              <h2 class="site-section-heading text-center font-secondary pt-4">
+                Horaires Cours
               </h2>
             </div>
           </div>
-          <h5 class="text-danger text-center">
-            ps : les horraires sont valables du 07 juin au 17 juillet
-          </h5>
+          <h5 class="text-danger text-center"></h5>
           <h5 class="text-warning text-center">
-            <i class="fas fa-exclamation-triangle text-warning"></i> piscine
-            non-converte jusqu'au 17 juillet
+            <!-- <i class="fas fa-exclamation-triangle text-warning"></i> -->
           </h5>
           <div class="row">
             <div class="col-12">
@@ -350,6 +350,37 @@
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-md-12 text-center">
+              <h2 class="site-section-heading text-center font-secondary pt-4">
+                Prix par séance (40 min)
+              </h2>
+            </div>
+          </div>
+          <h5 class="text-danger text-center"></h5>
+          <h5 class="text-warning text-center">
+            <!-- <i class="fas fa-exclamation-triangle text-warning"></i> -->
+          </h5>
+          <div class="row justify-content-md-center">
+            <div class="col-8">
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">1 séance</th>
+                    <th scope="col">5 séances</th>
+                    <th scope="col">10 séances</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10€</td>
+                    <td>45€</td>
+                    <td>80€</td>
                   </tr>
                 </tbody>
               </table>
